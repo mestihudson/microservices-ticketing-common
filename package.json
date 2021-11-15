@@ -9,7 +9,8 @@
   "license": "MIT",
   "scripts": {
     "prebuild": "del ./build/*",
-    "build": "tsc"
+    "build": "tsc",
+    "pub": "git diff --exit-code --quiet && npm version patch && yarn build yarn publish"
   },
   "devDependencies": {
     "del-cli": "^4.0.1",
