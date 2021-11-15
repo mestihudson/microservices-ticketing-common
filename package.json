@@ -1,7 +1,7 @@
 {
   "name": "@mestihudson-ticketing/common",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./build/index.js",
   "license": "MIT",
   "scripts": {
     "prebuild": "del ./build/*",
