@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "prebuild": "del ./build/*",
     "build": "tsc"
   },
   "devDependencies": {
