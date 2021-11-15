@@ -10,7 +10,7 @@
   "scripts": {
     "prebuild": "del ./build/*",
     "build": "tsc",
-    "pub": "git diff --exit-code --quiet && npm version patch && yarn build && yarn publish"
+    "pub": "git diff --exit-code --quiet && yarn version --patch && yarn build && yarn publish --non-interactive"
   },
   "devDependencies": {
     "del-cli": "^4.0.1",
