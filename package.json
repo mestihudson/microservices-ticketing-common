@@ -10,7 +10,7 @@
   "scripts": {
     "prebuild": "del ./build/*",
     "build": "tsc",
-    "dev": "nodemon --exec 'yarn build' --watch 'src/*'",
+    "dev": "nodemon --exec 'yarn build' --watch 'src/*' --watch 'package.json' -e 'ts,json'",
     "pub": "git diff --exit-code --quiet && yarn version --patch && yarn build && yarn publish --non-interactive"
   },
   "devDependencies": {
