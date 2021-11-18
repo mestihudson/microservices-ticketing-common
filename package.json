@@ -11,7 +11,7 @@
     "prebuild": "del ./build/*",
     "build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
     "dev": "nodemon --exec 'yarn build' --watch 'src/*' --watch 'package.json' --watch 'tsconfig.json' -e 'ts,json'",
-    "pub": "git diff --exit-code --quiet && yarn version --patch && yarn build && yarn publish --non-interactive"
+    "pub": "git diff --exit-code --quiet && npm login && yarn version --patch && yarn build && yarn publish --non-interactive"
   },
   "devDependencies": {
     "del-cli": "^4.0.1",
