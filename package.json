@@ -28,5 +28,10 @@
     "express-validator": "^6.13.0",
     "jsonwebtoken": "^8.5.1",
     "node-nats-streaming": "^0.3.2"
+  },
+  "author": {
+    "name": "mestihudson",
+    "url": "https://github.com/mestihudson"
+  },
   }
 }
