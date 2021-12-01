@@ -9,5 +9,6 @@ export interface TicketUpdatedEvent extends BaseEvent {
     title: string;
     price: number;
     userId: string;
+    orderId?: string;
   }
 }
